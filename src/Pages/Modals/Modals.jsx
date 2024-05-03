@@ -466,7 +466,7 @@ export function FilterModal(props) {
                                 </div>
 
                                 <div className='filter19'>
-                                    <p onClick={() => props.centeredsetModalShow2(true)}>Add Field</p>
+                                    <p onClick={() => props.setModalShow2(true)}>Add Field</p>
                                     <span>Restore default fields</span>
                                 </div>
 
@@ -881,18 +881,25 @@ export function AdmissionFollowUp(props) {
 
     useEffect(() => {
         const handleResize = () => {
-            // Update the width style based on screen size
             const screenWidth = window.innerWidth;
-            const newWidthStyle = screenWidth < 580 ? '100%' : '82%'; // Adjust breakpoint as needed
+            let newWidthStyle;
+
+            if (screenWidth < 580) {
+                newWidthStyle = '100%'; // Full width for screens less than 580px
+            } else if (screenWidth < 980) {
+                newWidthStyle = '100%';
+            } else {
+                newWidthStyle = '82%';
+            }
 
             setWidthStyle(newWidthStyle);
         };
 
+        // Call handleResize on initial mount
+        handleResize();
+
         // Add event listener for window resize
         window.addEventListener('resize', handleResize);
-
-        // Initial call to set width based on current screen size
-        handleResize();
 
         // Clean up event listener on component unmount
         return () => {
@@ -1207,24 +1214,24 @@ export function AdmissionFollowUp(props) {
 // New Lead Modal for admission page
 export function NeWLead(props) {
     const [widthStyle, setWidthStyle] = useState('82%');
-    const [leftstyl, Setleftstyl] = useState('18.1%');
+    const [leftStyle, setLeftStyle] = useState('18.1%');
+
 
     useEffect(() => {
         const handleResize = () => {
-            // Update the width style based on screen size
             const screenWidth = window.innerWidth;
             const newWidthStyle = screenWidth < 580 ? '100%' : '82%'; // Adjust breakpoint as needed
-            const newLeftstyl = screenWidth < 580 ? '0' : '18.1%'; // Adjust breakpoint as needed
+            const newLeftStyle = screenWidth < 980 ? '100%' : '18.1%'; // Adjust breakpoint as needed
 
             setWidthStyle(newWidthStyle);
-            Setleftstyl(newLeftstyl)
+            setLeftStyle(newLeftStyle);
         };
+
+        // Call handleResize on initial mount
+        handleResize();
 
         // Add event listener for window resize
         window.addEventListener('resize', handleResize);
-
-        // Initial call to set width based on current screen size
-        handleResize();
 
         // Clean up event listener on component unmount
         return () => {
@@ -1234,7 +1241,7 @@ export function NeWLead(props) {
 
     return (
         <>
-            <Offcanvas show={props.show} onHide={props.onHide} placement="top" style={{ width: widthStyle, height: "100%", top: '10%', left: leftstyl }}>
+            <Offcanvas show={props.show} onHide={props.onHide} placement="top" style={{ width: widthStyle, height: "100%", top: '10%', left: leftStyle }}>
                 <Offcanvas.Body className='Admissionfollowup101'>
                     <div className='Admissionfollowup'>
                         <div className='Admissionfollowup1'>
@@ -1761,18 +1768,25 @@ export function NewTask(props) {
 
     useEffect(() => {
         const handleResize = () => {
-            // Update the width style based on screen size
             const screenWidth = window.innerWidth;
-            const newWidthStyle = screenWidth < 580 ? '100%' : '82%'; // Adjust breakpoint as needed
+            let newWidthStyle;
+
+            if (screenWidth < 580) {
+                newWidthStyle = '100%'; // Full width for screens less than 580px
+            } else if (screenWidth < 980) {
+                newWidthStyle = '100%';
+            } else {
+                newWidthStyle = '82%';
+            }
 
             setWidthStyle(newWidthStyle);
         };
 
+        // Call handleResize on initial mount
+        handleResize();
+
         // Add event listener for window resize
         window.addEventListener('resize', handleResize);
-
-        // Initial call to set width based on current screen size
-        handleResize();
 
         // Clean up event listener on component unmount
         return () => {
@@ -1892,18 +1906,25 @@ export function SMS(props) {
 
     useEffect(() => {
         const handleResize = () => {
-            // Update the width style based on screen size
             const screenWidth = window.innerWidth;
-            const newWidthStyle = screenWidth < 580 ? '100%' : '82%'; // Adjust breakpoint as needed
+            let newWidthStyle;
+
+            if (screenWidth < 580) {
+                newWidthStyle = '100%'; // Full width for screens less than 580px
+            } else if (screenWidth < 980) {
+                newWidthStyle = '100%';
+            } else {
+                newWidthStyle = '82%';
+            }
 
             setWidthStyle(newWidthStyle);
         };
 
+        // Call handleResize on initial mount
+        handleResize();
+
         // Add event listener for window resize
         window.addEventListener('resize', handleResize);
-
-        // Initial call to set width based on current screen size
-        handleResize();
 
         // Clean up event listener on component unmount
         return () => {

@@ -375,6 +375,114 @@
 
 /* Responsive css for filter  */
 
+
+@media screen and (max-width: 980px) {
+  .filter2 {
+    width: 30%;
+  }
+
+  .filter4 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+  }
+
+  .filter4 p {
+    font-size: 12px;
+  }
+
+  .filter5 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+  }
+
+  .filter5 p {
+    font-size: 12px;
+  }
+
+  .filter6 p {
+    font-size: 12px;
+  }
+
+  .filter12 input {
+    width: 100%;
+  }
+
+  .filter8 {
+    gap: 10px;
+    padding-left: 1px;
+  }
+
+  .filter9 p {
+    font-size: 12px;
+  }
+
+  .filter10 p {
+    font-size: 12px;
+  }
+
+  .filter12 label {
+    font-size: 12px;
+  }
+
+  .filter13 {
+    width: 100%;
+  }
+
+  .filter15 {
+    flex-direction: column;
+    align-items: normal;
+  }
+
+  .filter16 label {
+    font-size: 12px;
+  }
+
+  .filter16 select {
+    width: 100%;
+  }
+
+  .filter19 {
+    gap: 10px;
+  }
+
+  .filter20 {
+    gap: 10px;
+  }
+
+  .filter20 button:nth-child(1) {
+    padding: 12px 15px 12px 15px;
+  }
+
+  .filter20 button:nth-child(2) {
+    padding: 12px 15px 12px 15px;
+  }
+
+  .filter22 {
+    gap: 10px;
+  }
+
+  .filter22 select {
+    width: 100px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color: #000000;
+    margin: 0;
+    padding-left: 10px;
+  }
+
+  .filter22 input {
+    width: 100px;
+  }
+
+  .filter24 {
+    width: 227px;
+  }
+}
+
 @media screen and (max-width: 580px) {
   .filter2 {
     width: 30%;
@@ -686,6 +794,46 @@
 }
 
 /* Responsive css for addfield  */
+@media screen and (max-width: 980px) {
+  .addfield4 {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .addfield1 {
+    gap: 10px;
+  }
+
+  .addfield2 {
+    padding: 12px 15px 12px 15px;
+  }
+
+  .addfield3 {
+    padding: 12px 15px 12px 15px;
+  }
+
+  .addfield5 {
+    width: 100%;
+  }
+
+  .addfield8 {
+    width: 100%;
+    flex-direction: column;
+    align-items: normal;
+  }
+
+  .addfield10 {
+    gap: 20px;
+  }
+
+  .addfield12 {
+    gap: 10px;
+  }
+
+  .addfield14 {
+    margin-top: 10px;
+  }
+}
 
 @media screen and (max-width: 580px) {
   .addfield4 {
@@ -1291,6 +1439,15 @@
 }
 
 /* Responsive css for admissionfollowup  */
+
+
+@media screen and (max-width: 980px) {
+  .Admissionfollowup10 {
+    width: 100%;
+  }
+
+}
+
 
 @media screen and (max-width: 580px) {
   .Admissionfollowup10 {
@@ -2194,6 +2351,7 @@
   justify-content: space-between;
   width: 80%;
   margin-top: 20px;
+  gap: 10px;
 }
 
 .admissionstatus12 {
@@ -2223,6 +2381,26 @@
 }
 
 /* Responsive css for admissionstatus  */
+@media screen and (max-width: 980px) {
+  .admissionstatus6 {
+    /* width: 100%; */
+    left: 20px;
+  }
+
+  .admissionstatus11 {
+    width: 100%;
+    gap: 2px;
+  }
+
+  .admissionstatus13 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .admissionstatus13 p {
+    font-size: 12px;
+  }
+}
 
 @media screen and (max-width: 580px) {
   .admissionstatus6 {
@@ -3066,6 +3244,7 @@
 
 .MarksheetUploadmodal4 {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
@@ -3178,6 +3357,10 @@
 
 /* Responsive css for listEmployeemodal  */
 
+@media screen and (max-width: 980px) {
+
+}
+
 @media screen and (max-width: 580px) {
   .MarksheetUploadmodal7 button:nth-child(1) {
     padding: 12px 15px 12px 15px;
@@ -3186,6 +3369,7 @@
   .MarksheetUploadmodal7 button:nth-child(2) {
     padding: 12px 15px 12px 15px;
   }
+
 
 }
 
@@ -3313,6 +3497,13 @@
 
 
 /* Responsive css for addsalestargetmodal  */
+@media screen and (max-width: 980px) {
+  .addsalestargetmodal2 select {
+    width: 100%;
+  }
+
+}
+
 
 @media screen and (max-width: 580px) {
   .addsalestargetmodal2 select {
@@ -3543,6 +3734,34 @@
 
 
 /* Responsive css for inviteusersmodal  */
+@media screen and (max-width: 980px) {
+  .inviteusersmodal4 {
+    width: auto;
+    padding: 10px;
+  }
+
+  .inviteusersmodal6 {
+    width: auto;
+    height: auto;
+    padding: 10px 15px 10px 15px;
+  }
+
+  .inviteusersmodal6 p {
+    font-size: 12px;
+  }
+
+  .inviteusersmodal10 {
+    width: 100%;
+  }
+
+  .inviteusersmodal12 {
+    width: 100%;
+  }
+
+  .inviteusersmodal7 p {
+    font-size: 12px;
+  }
+}
 
 @media screen and (max-width: 580px) {
   .inviteusersmodal4 {
@@ -3567,6 +3786,7 @@
   .inviteusersmodal12 {
     width: 100%;
   }
+
   .inviteusersmodal7 p {
     font-size: 12px;
   }

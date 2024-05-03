@@ -149,7 +149,25 @@
 
 
 /* Responsive css for dailyreportemplate  */
+@media screen and (max-width: 980px) {
+    .dailyreportemplate4{
+        width: 100%;
+        padding: 0;
+        padding-bottom: 20px;
+    }
 
+    .dailyreportemplate6{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .dailyreportemplate2 p{
+        font-size: 12px;
+    }
+    .dailyreportemplate3 button{
+        padding: 10px 15px 10px 15px;
+        font-size: 12.5px;
+    }
+}
 
 @media screen and (max-width: 580px) {
     .dailyreportemplate4{
